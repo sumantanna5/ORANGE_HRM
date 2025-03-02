@@ -1,51 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="1" failed="3" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-01T20:49:27 IST" name="Default suite" finished-at="2025-03-01T20:50:50 IST" duration-ms="83202">
+  <suite started-at="2025-03-02T17:47:20 IST" name="Default suite" finished-at="2025-03-02T17:49:26 IST" duration-ms="126010">
     <groups>
     </groups>
-    <test started-at="2025-03-01T20:49:27 IST" name="Default test" finished-at="2025-03-01T20:50:50 IST" duration-ms="83202">
+    <test started-at="2025-03-02T17:47:20 IST" name="Default test" finished-at="2025-03-02T17:49:26 IST" duration-ms="126010">
       <class name="TestComponets.AdminTabTest">
-        <test-method is-config="true" signature="initializedriver()[pri:0, instance:TestComponets.AdminTabTest@1d296da]" started-at="2025-03-01T20:49:17 IST" name="initializedriver" finished-at="2025-03-01T20:49:27 IST" duration-ms="10466" status="PASS">
+        <test-method is-config="true" signature="initializedriver()[pri:0, instance:TestComponets.AdminTabTest@75d4a5c2]" started-at="2025-03-02T17:46:45 IST" name="initializedriver" finished-at="2025-03-02T17:47:20 IST" duration-ms="34452" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializedriver -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestComponets.AdminTabTest@1d296da]" started-at="2025-03-01T20:49:27 IST" name="launchApplication" finished-at="2025-03-01T20:49:37 IST" duration-ms="10083" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestComponets.AdminTabTest@75d4a5c2]" started-at="2025-03-02T17:47:20 IST" name="launchApplication" finished-at="2025-03-02T17:47:34 IST" duration-ms="14072" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="AdminMenu()[pri:0, instance:TestComponets.AdminTabTest@1d296da]" started-at="2025-03-01T20:49:37 IST" name="AdminMenu" finished-at="2025-03-01T20:49:57 IST" depends-on-methods="TestComponets.BaseTest.launchApplication" duration-ms="19427" status="PASS">
+        <test-method is-config="true" signature="AdminMenu()[pri:0, instance:TestComponets.AdminTabTest@75d4a5c2]" started-at="2025-03-02T17:47:34 IST" name="AdminMenu" finished-at="2025-03-02T17:47:45 IST" depends-on-methods="TestComponets.BaseTest.launchApplication" duration-ms="11765" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AdminMenu -->
-        <test-method signature="CreateNewUserwithAdminRole()[pri:0, instance:TestComponets.AdminTabTest@1d296da]" started-at="2025-03-01T20:49:57 IST" name="CreateNewUserwithAdminRole" finished-at="2025-03-01T20:50:20 IST" duration-ms="23708" status="PASS">
+        <test-method signature="CreateNewUserwithAdminRole()[pri:1, instance:TestComponets.AdminTabTest@75d4a5c2]" started-at="2025-03-02T17:47:45 IST" name="CreateNewUserwithAdminRole" finished-at="2025-03-02T17:48:11 IST" duration-ms="25883" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateNewUserwithAdminRole -->
-        <test-method signature="CreateNewUserwithAdminRoleAndUserStatusEnable()[pri:0, instance:TestComponets.AdminTabTest@1d296da]" started-at="2025-03-01T20:50:20 IST" name="CreateNewUserwithAdminRoleAndUserStatusEnable" finished-at="2025-03-01T20:50:40 IST" duration-ms="19624" status="FAIL">
+        <test-method signature="CreateNewUserwithESSRole()[pri:0, instance:TestComponets.AdminTabTest@75d4a5c2]" started-at="2025-03-02T17:48:11 IST" name="CreateNewUserwithESSRole" finished-at="2025-03-02T17:48:36 IST" depends-on-methods="TestComponets.AdminTabTest.CreateNewUserwithAdminRole" duration-ms="24568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateNewUserwithESSRole -->
+        <test-method signature="CreateNewUserwithAdminRoleAndUserStatusEnable()[pri:0, instance:TestComponets.AdminTabTest@75d4a5c2]" started-at="2025-03-02T17:48:36 IST" name="CreateNewUserwithAdminRoleAndUserStatusEnable" finished-at="2025-03-02T17:48:59 IST" depends-on-methods="TestComponets.AdminTabTest.CreateNewUserwithESSRole" duration-ms="23182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateNewUserwithAdminRoleAndUserStatusEnable -->
+        <test-method signature="CreateNewUserwithESSRoleAndUserStatusEnable()[pri:0, instance:TestComponets.AdminTabTest@75d4a5c2]" started-at="2025-03-02T17:48:59 IST" name="CreateNewUserwithESSRoleAndUserStatusEnable" finished-at="2025-03-02T17:49:25 IST" depends-on-methods="TestComponets.AdminTabTest.CreateNewUserwithAdminRoleAndUserStatusEnable" duration-ms="26165" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//label[@class='oxd-label oxd-input-field-required' and text()='Password']//parent::div//following-sibling::div/input"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//label[text()='Username']//parent::div//following-sibling::div//input[@class='oxd-input oxd-input--active']"}
   (Session info: chrome=133.0.6943.142)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.26.0', revision: '8ccf0219d7'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [270f9fac0278d1d8e80df0adb6861704, findElement {value=//label[@class='oxd-label oxd-input-field-required' and text()='Password']//parent::div//following-sibling::div/input, using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\CG-DTE\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51605}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51605/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 270f9fac0278d1d8e80df0adb6861704]]>
+Command: [fbfa0fef9929bfbe5979cbc3a11d9b3e, findElement {value=//label[text()='Username']//parent::div//following-sibling::div//input[@class='oxd-input oxd-input--active'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\CG-DTE\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52824}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52824/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fbfa0fef9929bfbe5979cbc3a11d9b3e]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//label[@class='oxd-label oxd-input-field-required' and text()='Password']//parent::div//following-sibling::div/input"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//label[text()='Username']//parent::div//following-sibling::div//input[@class='oxd-input oxd-input--active']"}
   (Session info: chrome=133.0.6943.142)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.26.0', revision: '8ccf0219d7'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [270f9fac0278d1d8e80df0adb6861704, findElement {value=//label[@class='oxd-label oxd-input-field-required' and text()='Password']//parent::div//following-sibling::div/input, using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\CG-DTE\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51605}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51605/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 270f9fac0278d1d8e80df0adb6861704
+Command: [fbfa0fef9929bfbe5979cbc3a11d9b3e, findElement {value=//label[text()='Username']//parent::div//following-sibling::div//input[@class='oxd-input oxd-input--active'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\CG-DTE\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52824}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52824/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fbfa0fef9929bfbe5979cbc3a11d9b3e
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -63,155 +71,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at jdk.proxy2/jdk.proxy2.$Proxy14.sendKeys(Unknown Source)
-at OrgScreens.AdminTab.AddUser(AdminTab.java:80)
-at TestComponets.AdminTabTest.CreateNewUserwithAdminRoleAndUserStatusEnable(AdminTabTest.java:45)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CreateNewUserwithAdminRoleAndUserStatusEnable -->
-        <test-method signature="CreateNewUserwithESSRole()[pri:0, instance:TestComponets.AdminTabTest@1d296da]" started-at="2025-03-01T20:50:40 IST" name="CreateNewUserwithESSRole" finished-at="2025-03-01T20:50:45 IST" duration-ms="5116" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@type='button']//following-sibling::i"}
-  (Session info: chrome=133.0.6943.142)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.26.0', revision: '8ccf0219d7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [270f9fac0278d1d8e80df0adb6861704, findElement {value=//button[@type='button']//following-sibling::i, using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\CG-DTE\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51605}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51605/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 270f9fac0278d1d8e80df0adb6861704]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@type='button']//following-sibling::i"}
-  (Session info: chrome=133.0.6943.142)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.26.0', revision: '8ccf0219d7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [270f9fac0278d1d8e80df0adb6861704, findElement {value=//button[@type='button']//following-sibling::i, using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\CG-DTE\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51605}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51605/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 270f9fac0278d1d8e80df0adb6861704
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-at OrgScreens.AdminTab.AddUser(AdminTab.java:63)
-at TestComponets.AdminTabTest.CreateNewUserwithESSRole(AdminTabTest.java:36)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CreateNewUserwithESSRole -->
-        <test-method signature="CreateNewUserwithESSRoleAndUserStatusEnable()[pri:0, instance:TestComponets.AdminTabTest@1d296da]" started-at="2025-03-01T20:50:45 IST" name="CreateNewUserwithESSRoleAndUserStatusEnable" finished-at="2025-03-01T20:50:50 IST" duration-ms="5074" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@type='button']//following-sibling::i"}
-  (Session info: chrome=133.0.6943.142)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.26.0', revision: '8ccf0219d7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [270f9fac0278d1d8e80df0adb6861704, findElement {value=//button[@type='button']//following-sibling::i, using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\CG-DTE\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51605}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51605/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 270f9fac0278d1d8e80df0adb6861704]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@type='button']//following-sibling::i"}
-  (Session info: chrome=133.0.6943.142)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.26.0', revision: '8ccf0219d7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [270f9fac0278d1d8e80df0adb6861704, findElement {value=//button[@type='button']//following-sibling::i, using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\CG-DTE\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51605}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51605/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 270f9fac0278d1d8e80df0adb6861704
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-at OrgScreens.AdminTab.AddUser(AdminTab.java:63)
+at OrgScreens.AdminTab.AddUser(AdminTab.java:94)
 at TestComponets.AdminTabTest.CreateNewUserwithESSRoleAndUserStatusEnable(AdminTabTest.java:53)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -245,7 +105,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateNewUserwithESSRoleAndUserStatusEnable -->
-        <test-method is-config="true" signature="closebroswer()[pri:0, instance:TestComponets.AdminTabTest@1d296da]" started-at="2025-03-01T20:50:51 IST" name="closebroswer" finished-at="2025-03-01T20:50:54 IST" duration-ms="2221" status="PASS">
+        <test-method is-config="true" signature="closebroswer()[pri:0, instance:TestComponets.AdminTabTest@75d4a5c2]" started-at="2025-03-02T17:49:26 IST" name="closebroswer" finished-at="2025-03-02T17:49:29 IST" duration-ms="3403" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebroswer -->

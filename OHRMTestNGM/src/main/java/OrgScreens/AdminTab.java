@@ -16,7 +16,7 @@ public class AdminTab {
 
 	@FindBy(xpath = "//button[@type='button']//following-sibling::i")
 	WebElement AdminAddUserButton;
-
+	
 	@FindBy(xpath = "//*[text()='Add User']")
 	WebElement AddUserHearderText;
 
@@ -161,5 +161,6 @@ public class AdminTab {
 	public void DeleteUser() {
 		DeleteRecord.click();
 		DeleteRecordYes.click();
+		System.out.println("User Deleted Successfully");
 	}
 }

@@ -21,36 +21,36 @@ public class AdminTabTest extends BaseTest {
 		}
 	}
 
-	@Test
+	@Test(priority = 1)
 	public void CreateNewUserwithAdminRole() {
 
 		AdminTab admin = new AdminTab(BaseTest.getdriver());
-		admin.AddUser("Admin", "Disabled", "A", "TestUser01");
+		admin.AddUser("Admin", "Disabled", "A", "Test_User_01");
 		admin.DeleteUser();
 	}
 
-	@Test
+	@Test(dependsOnMethods = "CreateNewUserwithAdminRole")
 	public void CreateNewUserwithESSRole() {
 
 		AdminTab admin = new AdminTab(BaseTest.getdriver());
-		admin.AddUser("ESS", "Disabled", "A", "TestUser02");
+		admin.AddUser("ESS", "Disabled", "A", "Test_User_02");
 		admin.DeleteUser();
 
 	}
 
-	@Test
+	@Test(dependsOnMethods = "CreateNewUserwithESSRole")
 	public void CreateNewUserwithAdminRoleAndUserStatusEnable() {
 
 		AdminTab admin = new AdminTab(BaseTest.getdriver());
-		admin.AddUser("Admin", "Enabled", "A", "TestUser03");
+		admin.AddUser("Admin", "Enabled", "A", "Test_User_03");
 		admin.DeleteUser();
 	}
 
-	@Test
+	@Test(dependsOnMethods = "CreateNewUserwithAdminRoleAndUserStatusEnable")
 	public void CreateNewUserwithESSRoleAndUserStatusEnable() {
 
 		AdminTab admin = new AdminTab(BaseTest.getdriver());
-		admin.AddUser("ESS", "Enabled", "A", "TestUser05");
+		admin.AddUser("ESS", "Enabled", "A", "Test_User_04");
 		admin.DeleteUser();
 
 	}
